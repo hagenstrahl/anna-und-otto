@@ -12,7 +12,7 @@ module.exports = {
     },
     fontFamily: {
       heading: ["eldwin-script"],
-      text: ["soleil-book"],
+      text: ["soleil"],
     },
   },
   plugins: [],
