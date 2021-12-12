@@ -4,7 +4,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        orange: "#f9c0a3",
+        grau: "#7d7d82",
+      },
+    },
+    fontFamily: {
+      heading: ["eldwin-script"],
+      text: ["soleil-book"],
+    },
   },
   plugins: [],
 };

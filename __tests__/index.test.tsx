@@ -4,8 +4,5 @@ import App from "../pages/index";
 describe("App", () => {
   test("renders without crashing", () => {
     render(<App />);
-    expect(
-      screen.getByRole("heading", { name: "Welcome to Next.js!" })
-    ).toBeInTheDocument();
   });
 });
