@@ -1,8 +1,8 @@
-import { render, screen } from "@testing-library/react";
-import App from "../pages/index";
+import { render } from "@testing-library/react";
+import Home from "../pages/index";
 
-describe("App", () => {
-  xtest("renders without crashing", () => {
-    render(<App />);
+describe("Home", () => {
+  test("renders without crashing", () => {
+    render(<Home />);
   });
 });

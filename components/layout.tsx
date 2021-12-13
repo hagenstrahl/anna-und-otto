@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../public/fao-web-assets-logo-vertical-colour.svg";
+import logo from "/public/fao-web-assets-logo-vertical-colour.svg";
 import { Facebook, Instagram } from "iconoir-react";
 import { Colors } from "../lib/constants/colors";
 import Head from "next/head";
