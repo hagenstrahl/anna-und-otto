@@ -103,7 +103,9 @@ const Datenschutz = (): JSX.Element => (
         ist:
       </p>
       <p className="mt-4">
-        ANNA & OTTO – Das Familiencafé, Markt 15, 17235 Neustrelitz
+        ANNA & OTTO – Das Familiencafé
+        <br />
+        Markt 15 · 17235 Neustrelitz
       </p>
       <p className="mt-4">
         Telefon:{" "}
