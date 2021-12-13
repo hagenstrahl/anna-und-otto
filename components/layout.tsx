@@ -2,9 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "/public/fao-web-assets-logo-vertical-colour.svg";
 import { Facebook, Instagram } from "iconoir-react";
-import { Colors } from "../lib/constants/colors";
 import Head from "next/head";
 import Heading, { HeadingType } from "./heading";
+import ExternalLink from "./external-link";
 
 interface LayoutProps {
   heading: string;
@@ -41,20 +41,12 @@ const Layout = ({ heading, title, children }: LayoutProps): JSX.Element => (
     </main>
     <footer className="mt-8">
       <div className="flex justify-center gap-4 mb-20">
-        <a
-          href="https://www.instagram.com/anna_und_otto/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Instagram width={64} height={64} color={Colors.Orange} />
-        </a>
-        <a
-          href="https://www.facebook.com/annaundotto/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Facebook width={64} height={64} color={Colors.Orange} />
-        </a>
+        <ExternalLink href="https://www.instagram.com/anna_und_otto/">
+          <Instagram width={64} height={64} />
+        </ExternalLink>
+        <ExternalLink href="https://www.facebook.com/annaundotto/">
+          <Facebook width={64} height={64} />
+        </ExternalLink>
       </div>
       <div className="fixed bottom-0 left-0 flex justify-center w-full gap-4 p-2 text-lg border-t bg-white/80 border-grau text-grau font-text">
         <Link href="/impressum">
