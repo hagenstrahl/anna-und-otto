@@ -5,9 +5,9 @@ const Home = (): JSX.Element => {
     <Layout heading="Coming Soon!">
       <section className="max-w-3xl text-center">
         Ob wärmende Strahlen der ersten Frühlingssonne oder bewölkter Himmel mit
-        Nieselregen – bald gibt es mindestens einen guten Grund, auch bei
+        Nieselregen – ab jetzt gibt es mindestens einen guten Grund, auch bei
         Schietwetter vor die Tür zu gehen. Das Ziel: unser süßes, gemütliches
-        Café am Neustrelitzer Markt. Bei Anna & Otto findet ihr endlich wieder
+        Café am Neustrelitzer Markt. Bei ANNA & OTTO findet ihr endlich wieder
         Zeit für die kleinen Dinge des Lebens. Duftender, selbst gebackener
         Kuchen, Gespräche über die kleinen und großen Wunder des Alltags oder
         ausgiebiges Faxen machen in unserer großen Spielecke.
