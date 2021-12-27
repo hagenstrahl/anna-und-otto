@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import logo from "/public/fao-web-assets-logo-vertical-colour.svg";
-import { Facebook, Instagram } from "iconoir-react";
+import { Facebook, Instagram, Mail, Map, Phone } from "iconoir-react";
 import Head from "next/head";
 import Heading, { HeadingType } from "./heading";
 import ExternalLink from "./external-link";
@@ -40,21 +40,32 @@ const Layout = ({ heading, title, children }: LayoutProps): JSX.Element => (
       {children}
     </main>
     <footer className="mt-8">
-      <div className="flex justify-center gap-4 mb-20">
-        <ExternalLink href="https://www.instagram.com/anna_und_otto/">
-          <Instagram width={64} height={64} />
+      <div className="flex justify-center gap-4 mb-20"></div>
+      <div className="fixed bottom-0 left-0 flex justify-around w-full gap-4 p-2 text-lg bg-white text-grau font-text">
+        <ExternalLink href="tel:+4939812293575" className="w-12 h-12">
+          <Phone width={24} height={24} />
         </ExternalLink>
-        <ExternalLink href="https://www.facebook.com/annaundotto/">
-          <Facebook width={64} height={64} />
+        <ExternalLink href="mailto:post@anna-otto.de" className="w-12 h-12">
+          <Mail width={24} height={24} />
         </ExternalLink>
-      </div>
-      <div className="fixed bottom-0 left-0 flex justify-center w-full gap-4 p-2 text-lg border-t bg-white/80 border-grau text-grau font-text">
-        <Link href="/impressum">
-          <a>Impressum</a>
-        </Link>
-        <Link href="/datenschutz">
-          <a>Datenschutz</a>
-        </Link>
+        <ExternalLink
+          href="https://g.page/anna-otto-neustrelitz?share"
+          className="w-12 h-12"
+        >
+          <Map width={24} height={24} />
+        </ExternalLink>
+        <ExternalLink
+          href="https://www.facebook.com/annaundotto/"
+          className="w-12 h-12"
+        >
+          <Facebook width={24} height={24} />
+        </ExternalLink>
+        <ExternalLink
+          href="https://www.instagram.com/anna_und_otto/"
+          className="w-12 h-12"
+        >
+          <Instagram width={24} height={24} />
+        </ExternalLink>
       </div>
     </footer>
   </div>

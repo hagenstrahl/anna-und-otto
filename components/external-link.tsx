@@ -12,7 +12,7 @@ const ExternalLink = ({
   if (href.includes("mailto:") || href.includes("tel:")) {
     return (
       <a
-        className={`text-orange hover:text-dark-orange ${className}`}
+        className={`flex items-center justify-center ${className}`}
         href={href}
       >
         {children}
@@ -21,7 +21,7 @@ const ExternalLink = ({
   } else {
     return (
       <a
-        className={`text-orange hover:text-dark-orange ${className}`}
+        className={`flex items-center justify-center ${className}`}
         href={href}
         target="_blank"
         rel="noreferrer"
