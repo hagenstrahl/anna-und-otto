@@ -1,5 +1,5 @@
-import ExternalLink from "../components/external-link";
-import Heading, { HeadingType } from "../components/heading";
+import ExternalLink from "../components/shared/external-link";
+import Heading, { HeadingType } from "../components/shared/heading";
 import Layout from "../components/layout";
 
 const Datenschutz = (): JSX.Element => (

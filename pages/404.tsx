@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import Heading, { HeadingType } from "../components/heading";
+import Heading, { HeadingType } from "../components/shared/heading";
 
 const Custom404 = (): JSX.Element => (
   <Layout heading="Hoppla!" title="Hoppla!">
