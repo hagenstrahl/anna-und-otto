@@ -30,7 +30,7 @@ const Layout = ({ heading, title, children }: LayoutProps): JSX.Element => {
         >
           <MenuIcon className="w-10 h-10 text-orange hover:text-dark-orange" />
         </nav>
-        {isMenuOpen && <Menu onClose={() => setIsMenuOpen(false)} />}
+        <Menu onClose={() => setIsMenuOpen(false)} isOpen={isMenuOpen} />
       </header>
       <Heading type={HeadingType.H1} className="mt-8">
         {heading}
