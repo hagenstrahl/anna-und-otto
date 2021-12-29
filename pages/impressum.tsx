@@ -29,11 +29,6 @@ const Impressum = (): JSX.Element => (
         <br />
         075/272/06264
       </p>
-      <p className="mt-4">
-        Steuernummer
-        <br />
-        075/272/06264
-      </p>
     </section>
     <section className="max-w-3xl text-center">
       <Heading type={HeadingType.H3} className="mt-4">
