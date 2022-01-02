@@ -1,18 +1,16 @@
 import { Facebook, Instagram, Mail, Map, Phone } from "iconoir-react";
 import Head from "next/head";
-import Heading, { HeadingType } from "./shared/heading";
 import ExternalLink from "./shared/external-link";
 import { MenuIcon } from "@heroicons/react/solid";
 import { useState } from "react";
 import Menu from "./menu";
 
 interface LayoutProps {
-  heading: string;
   title?: string;
   children: JSX.Element[] | JSX.Element | string;
 }
 
-const Layout = ({ heading, title, children }: LayoutProps): JSX.Element => {
+const Layout = ({ title, children }: LayoutProps): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -25,16 +23,13 @@ const Layout = ({ heading, title, children }: LayoutProps): JSX.Element => {
       </Head>
       <header>
         <nav
-          className="fixed p-2 right-8 top-12"
+          className="fixed z-10 p-2 right-8 top-12"
           onClick={() => setIsMenuOpen(true)}
         >
           <MenuIcon className="w-10 h-10 text-orange hover:text-dark-orange" />
         </nav>
         <Menu onClose={() => setIsMenuOpen(false)} isOpen={isMenuOpen} />
       </header>
-      <Heading type={HeadingType.H1} className="mt-8">
-        {heading}
-      </Heading>
       <main className="flex flex-col items-center text-lg font-text text-grau">
         {children}
       </main>

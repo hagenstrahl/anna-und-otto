@@ -3,7 +3,7 @@ import Heading, { HeadingType } from "../components/shared/heading";
 import Layout from "../components/layout";
 
 const Datenschutz = (): JSX.Element => (
-  <Layout heading="Datenschutz" title="Datenschutz">
+  <Layout title="Datenschutz">
     <section className="max-w-3xl text-center">
       <Heading type={HeadingType.H2}>Allgemeine Hinweise</Heading>
       <p>

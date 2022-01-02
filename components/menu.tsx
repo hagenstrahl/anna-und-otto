@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "/public/fao-web-assets-logo-vertical-colour.svg";
+import logo from "/public/logo-square-colour.svg";
 import { XIcon } from "@heroicons/react/solid";
 import { Minus } from "iconoir-react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -36,7 +36,7 @@ const Menu = ({ className = "", onClose, isOpen }: MenuProps) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className={`fixed top-0 left-0 w-full h-full bg-white overflow-y-auto ${className}`}
+          className={`fixed top-0 left-0 w-full h-full bg-white z-10 overflow-y-auto ${className}`}
           initial={{ x: "100%" }}
           animate={{ x: 0 }}
           exit={{ x: "100%" }}

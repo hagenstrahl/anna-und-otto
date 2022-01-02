@@ -3,7 +3,7 @@ import Heading, { HeadingType } from "../components/shared/heading";
 import Layout from "../components/layout";
 
 const Impressum = (): JSX.Element => (
-  <Layout heading="Impressum" title="Impressum">
+  <Layout title="Impressum">
     <section className="max-w-3xl text-center">
       <p className="font-bold">
         Inhaltlich Verantwortlicher gemäß § 5 Telemediengesetz und § 55 Abs. 2
