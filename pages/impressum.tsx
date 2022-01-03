@@ -4,6 +4,9 @@ import Layout from "../components/layout";
 
 const Impressum = (): JSX.Element => (
   <Layout title="Impressum">
+    <Heading className="mt-28" type={HeadingType.H1}>
+      Impressum
+    </Heading>
     <section className="max-w-3xl text-center">
       <p className="font-bold">
         Inhaltlich Verantwortlicher gemäß § 5 Telemediengesetz und § 55 Abs. 2

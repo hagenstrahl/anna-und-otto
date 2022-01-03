@@ -16,6 +16,7 @@ const Home = (): JSX.Element => {
             height={1210}
             layout="responsive"
             alt="Waffel"
+            placeholder="blur"
           />
         </div>
         <div className="relative w-2/5 top-4 right-4">
@@ -25,6 +26,7 @@ const Home = (): JSX.Element => {
             height={2508}
             layout="responsive"
             alt="Blaubeeren"
+            placeholder="blur"
           />
         </div>
       </div>
@@ -45,6 +47,7 @@ const Home = (): JSX.Element => {
             height={1379}
             layout="responsive"
             alt="Kaffeebohnen"
+            placeholder="blur"
           />
         </div>
       </div>
