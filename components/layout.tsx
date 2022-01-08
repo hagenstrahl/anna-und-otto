@@ -23,7 +23,7 @@ const Layout = ({ title, children }: LayoutProps): JSX.Element => {
       </Head>
       <header>
         <nav
-          className="fixed z-20 p-2 right-8 top-12"
+          className="fixed z-20 p-2 bg-white rounded-full right-8 top-12"
           onClick={() => setIsMenuOpen(true)}
         >
           <MenuIcon className="w-10 h-10 text-orange hover:text-dark-orange" />
