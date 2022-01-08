@@ -14,7 +14,7 @@ const Layout = ({ title, children }: LayoutProps): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="px-8">
+    <div className="px-4">
       <Head>
         <title>
           {title ? title + " - " : ""}ANNA & OTTO - Das Familiencafé
@@ -23,7 +23,7 @@ const Layout = ({ title, children }: LayoutProps): JSX.Element => {
       </Head>
       <header>
         <nav
-          className="fixed z-10 p-2 right-8 top-12"
+          className="fixed z-20 p-2 right-8 top-12"
           onClick={() => setIsMenuOpen(true)}
         >
           <MenuIcon className="w-10 h-10 text-orange hover:text-dark-orange" />
@@ -34,7 +34,7 @@ const Layout = ({ title, children }: LayoutProps): JSX.Element => {
         {children}
       </main>
       <footer className="mt-24">
-        <div className="fixed bottom-0 left-0 flex justify-around w-full gap-4 p-2 text-lg bg-white text-grau font-text">
+        <div className="fixed bottom-0 left-0 z-20 flex justify-around w-full gap-4 p-2 text-lg bg-white text-grau font-text">
           <ExternalLink href="tel:+4939812293575" className="w-12 h-12">
             <Phone width={24} height={24} />
           </ExternalLink>

@@ -36,7 +36,7 @@ const Menu = ({ className = "", onClose, isOpen }: MenuProps) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className={`fixed top-0 left-0 w-full h-full bg-white z-10 overflow-y-auto ${className}`}
+          className={`fixed top-0 left-0 w-full h-full bg-white z-20 overflow-y-auto ${className}`}
           initial={{ x: "100%" }}
           animate={{ x: 0 }}
           exit={{ x: "100%" }}

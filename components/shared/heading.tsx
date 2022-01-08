@@ -15,16 +15,14 @@ const Heading = ({ children, type, className }: HeadingProps): JSX.Element => {
     case HeadingType.H1:
       return (
         <h1
-          className={`text-center text-5xl font-heading text-orange mb-8 ${className}`}
+          className={`text-center text-6xl font-heading text-orange mb-8 ${className}`}
         >
           {children}
         </h1>
       );
     case HeadingType.H2:
       return (
-        <h2
-          className={`text-center text-3xl font-heading text-orange mb-6 ${className}`}
-        >
+        <h2 className={`text-5xl font-heading text-orange mb-6 ${className}`}>
           {children}
         </h2>
       );
