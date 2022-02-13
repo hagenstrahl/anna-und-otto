@@ -1,9 +1,12 @@
-import ExternalLink from "../components/external-link";
-import Heading, { HeadingType } from "../components/heading";
+import ExternalLink from "../components/shared/external-link";
+import Heading, { HeadingType } from "../components/shared/heading";
 import Layout from "../components/layout";
 
 const Impressum = (): JSX.Element => (
-  <Layout heading="Impressum" title="Impressum">
+  <Layout title="Impressum">
+    <Heading className="mt-28" type={HeadingType.H1}>
+      Impressum
+    </Heading>
     <section className="max-w-3xl text-center">
       <p className="font-bold">
         Inhaltlich Verantwortlicher gemäß § 5 Telemediengesetz und § 55 Abs. 2

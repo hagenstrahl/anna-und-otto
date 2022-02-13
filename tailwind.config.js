@@ -9,6 +9,8 @@ module.exports = {
         orange: "#f9c0a3",
         "dark-orange": "#f69f73",
         grau: "#7d7d82",
+        blau: "#ADDDEF",
+        gruen: "#D4E29E",
       },
     },
     fontFamily: {

@@ -1,9 +1,12 @@
-import ExternalLink from "../components/external-link";
-import Heading, { HeadingType } from "../components/heading";
+import ExternalLink from "../components/shared/external-link";
+import Heading, { HeadingType } from "../components/shared/heading";
 import Layout from "../components/layout";
 
 const Datenschutz = (): JSX.Element => (
-  <Layout heading="Datenschutz" title="Datenschutz">
+  <Layout title="Datenschutz">
+    <Heading className="mt-28" type={HeadingType.H1}>
+      Datenschutz
+    </Heading>
     <section className="max-w-3xl text-center">
       <Heading type={HeadingType.H2}>Allgemeine Hinweise</Heading>
       <p>
