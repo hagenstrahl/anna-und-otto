@@ -160,7 +160,7 @@ const Home = (): JSX.Element => {
               Das neue Glück bringt viele Veränderungen mit sich. Lasst euch in
               unseren verschiedenen Kursen beraten.
             </p>
-            <Link href="/shop">
+            <Link href="/beratungen-kurse">
               <a>
                 <Button type="secondary">Mehr erfahren</Button>
               </a>

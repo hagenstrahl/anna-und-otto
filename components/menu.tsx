@@ -28,7 +28,7 @@ const Menu = ({ className = "", onClose, isOpen }: MenuProps) => {
     new MenuLink("Café", "/cafe"),
     new MenuLink("Speisekarte", "/cafe#speisekarte", true),
     new MenuLink("Shop", "/shop"),
-    new MenuLink("Beratung & Kurse", "/beratung-kurse"),
+    new MenuLink("Beratung & Kurse", "/beratungen-kurse"),
     new MenuLink("Kontakt", "/kontakt"),
   ];
 
