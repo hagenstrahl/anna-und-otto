@@ -1,10 +1,11 @@
-import Link from "next/link";
-import Image from "next/image";
-import logo from "/public/fao-web-assets-logo-vertical-colour.svg";
-import { Facebook, Instagram } from "iconoir-react";
-import Head from "next/head";
-import Heading, { HeadingType } from "./heading";
-import ExternalLink from "./external-link";
+import logo from '/public/fao-web-assets-logo-vertical-colour.svg';
+import { Facebook, Instagram } from 'iconoir-react';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import ExternalLink from './external-link';
+import Heading, { HeadingType } from './heading';
 
 interface LayoutProps {
   heading: string;
@@ -20,8 +21,7 @@ const Layout = ({ heading, title, children }: LayoutProps): JSX.Element => (
     </Head>
     <header>
       <div className="flex justify-center mt-8">
-        <Link href="/">
-          <a className="w-2/3 max-w-xs">
+        <Link href="/" className="w-2/3 max-w-xs" passHref>
             <Image
               src={logo}
               width={46}
@@ -29,7 +29,6 @@ const Layout = ({ heading, title, children }: LayoutProps): JSX.Element => (
               layout="responsive"
               alt="ANNA & OTTO - Das Familiencafé"
             />
-          </a>
         </Link>
       </div>
     </header>
@@ -50,10 +49,10 @@ const Layout = ({ heading, title, children }: LayoutProps): JSX.Element => (
       </div>
       <div className="fixed bottom-0 left-0 flex justify-center w-full gap-4 p-2 text-lg border-t bg-white/80 border-grau text-grau font-text">
         <Link href="/impressum">
-          <a>Impressum</a>
+          Impressum
         </Link>
         <Link href="/datenschutz">
-          <a>Datenschutz</a>
+          Datenschutz
         </Link>
       </div>
     </footer>
