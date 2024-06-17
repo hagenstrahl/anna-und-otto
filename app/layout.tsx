@@ -1,24 +1,25 @@
-import logo from '/public/fao-web-assets-logo-vertical-colour.svg';
-import { Facebook, Instagram } from 'iconoir-react';
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
+import { Metadata } from 'next'
+import './globals.scss'
+import Link from 'next/link'
+import Image from 'next/image'
+import ExternalLink from '../components/external-link'
+import { Instagram,Facebook } from 'iconoir-react'
+import logo from '/public/fao-web-assets-logo-vertical-colour.svg'
 
-import ExternalLink from './external-link';
-import Heading, { HeadingType } from './heading';
-
-interface LayoutProps {
-  heading: string;
-  title?: string;
-  children: JSX.Element[] | JSX.Element | string;
+export const metadata: Metadata = {
+  title: 'ANNA & OTTO - Das Familiencafé',
+  
 }
 
-const Layout = ({ heading, title, children }: LayoutProps): JSX.Element => (
-  <div className="px-8">
-    <Head>
-      <title>{title ? title + " - " : ""}ANNA & OTTO - Das Familiencafé</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body>
+      <div className="px-8">
     <header>
       <div className="flex justify-center mt-8">
         <Link href="/" className="w-2/3 max-w-xs" passHref>
@@ -32,9 +33,6 @@ const Layout = ({ heading, title, children }: LayoutProps): JSX.Element => (
         </Link>
       </div>
     </header>
-    <Heading type={HeadingType.H1} className="mt-8">
-      {heading}
-    </Heading>
     <main className="flex flex-col items-center text-lg font-text text-grau">
       {children}
     </main>
@@ -57,6 +55,7 @@ const Layout = ({ heading, title, children }: LayoutProps): JSX.Element => (
       </div>
     </footer>
   </div>
-);
-
-export default Layout;
+      </body>
+    </html>
+  )
+}

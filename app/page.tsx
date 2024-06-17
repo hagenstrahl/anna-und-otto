@@ -1,8 +1,6 @@
-import Layout from "../components/layout";
-
 const Home = (): JSX.Element => {
   return (
-    <Layout heading="Coming Soon!">
+  <>
       <section className="max-w-3xl text-center">
         Ob wärmende Strahlen der ersten Frühlingssonne oder bewölkter Himmel mit
         Nieselregen – ab jetzt gibt es mindestens einen guten Grund, auch bei
@@ -19,7 +17,7 @@ const Home = (): JSX.Element => {
       <section className="max-w-3xl mt-5 text-center">
         Wir freuen uns auf euch. Bis bald!
       </section>
-    </Layout>
+      </>
   );
 };
 

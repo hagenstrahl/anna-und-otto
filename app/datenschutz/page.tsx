@@ -1,9 +1,13 @@
-import ExternalLink from "../components/external-link";
-import Heading, { HeadingType } from "../components/heading";
-import Layout from "../components/layout";
+import ExternalLink from "../../components/external-link";
+import Heading, { HeadingType } from "../../components/heading";
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Datenschutz - ANNA & OTTO - Das Familiencafé',
+}
 
 const Datenschutz = (): JSX.Element => (
-  <Layout heading="Datenschutz" title="Datenschutz">
+  <>
     <section className="max-w-3xl text-center">
       <Heading type={HeadingType.H2}>Allgemeine Hinweise</Heading>
       <p>
@@ -312,7 +316,7 @@ const Datenschutz = (): JSX.Element => (
         </ExternalLink>
       </p>
     </section>
-  </Layout>
+  </>
 );
 
 export default Datenschutz;
