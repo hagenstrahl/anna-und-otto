@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 
 const Datenschutz = (): JSX.Element => (
   <>
+    <Heading type={HeadingType.H1} className="mt-8">Datenschutz</Heading>
     <section className="max-w-3xl text-center">
       <Heading type={HeadingType.H2}>Allgemeine Hinweise</Heading>
       <p>
