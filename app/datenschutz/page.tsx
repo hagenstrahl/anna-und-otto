@@ -1,14 +1,17 @@
 import ExternalLink from "../../components/external-link";
 import Heading, { HeadingType } from "../../components/heading";
-import { Metadata } from 'next'
+import { Metadata } from "next";
+import { getMetadata } from "../../libs/metadata";
 
-export const metadata: Metadata = {
-  title: 'Datenschutz - ANNA & OTTO - Das Familiencafé',
-}
+export const metadata: Metadata = getMetadata({
+  title: "Datenschutz",
+});
 
 const Datenschutz = (): JSX.Element => (
   <>
-    <Heading type={HeadingType.H1} className="mt-8">Datenschutz</Heading>
+    <Heading type={HeadingType.H1} className="mt-8">
+      Datenschutz
+    </Heading>
     <section className="max-w-3xl text-center">
       <Heading type={HeadingType.H2}>Allgemeine Hinweise</Heading>
       <p>
