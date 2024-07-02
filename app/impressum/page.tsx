@@ -1,9 +1,17 @@
-import ExternalLink from "../components/external-link";
-import Heading, { HeadingType } from "../components/heading";
-import Layout from "../components/layout";
+import ExternalLink from "../../components/external-link";
+import Heading, { HeadingType } from "../../components/heading";
+import { Metadata } from "next";
+import { getMetadata } from "../../libs/metadata";
+
+export const metadata: Metadata = getMetadata({
+  title: "Impressum",
+});
 
 const Impressum = (): JSX.Element => (
-  <Layout heading="Impressum" title="Impressum">
+  <>
+    <Heading type={HeadingType.H1} className="mt-8">
+      Impressum
+    </Heading>
     <section className="max-w-3xl text-center">
       <p className="font-bold">
         Inhaltlich Verantwortlicher gemäß § 5 Telemediengesetz und § 55 Abs. 2
@@ -101,7 +109,7 @@ const Impressum = (): JSX.Element => (
         ihrer Daten.
       </p>
     </section>
-  </Layout>
+  </>
 );
 
 export default Impressum;

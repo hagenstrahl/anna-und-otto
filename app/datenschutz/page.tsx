@@ -1,9 +1,17 @@
-import ExternalLink from "../components/external-link";
-import Heading, { HeadingType } from "../components/heading";
-import Layout from "../components/layout";
+import ExternalLink from "../../components/external-link";
+import Heading, { HeadingType } from "../../components/heading";
+import { Metadata } from "next";
+import { getMetadata } from "../../libs/metadata";
+
+export const metadata: Metadata = getMetadata({
+  title: "Datenschutz",
+});
 
 const Datenschutz = (): JSX.Element => (
-  <Layout heading="Datenschutz" title="Datenschutz">
+  <>
+    <Heading type={HeadingType.H1} className="mt-8">
+      Datenschutz
+    </Heading>
     <section className="max-w-3xl text-center">
       <Heading type={HeadingType.H2}>Allgemeine Hinweise</Heading>
       <p>
@@ -272,7 +280,7 @@ const Datenschutz = (): JSX.Element => (
         in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns
         übermittelt. Dies sind:
       </p>
-      <p className="flex justify-center mt-4">
+      <div className="flex justify-center mt-4">
         <ul className="text-left list-disc list-inside">
           <li>Browsertyp und Browserversion</li>
           <li>verwendetes Betriebssystem</li>
@@ -281,7 +289,7 @@ const Datenschutz = (): JSX.Element => (
           <li>Uhrzeit der Serveranfrage</li>
           <li>IP-Adresse</li>
         </ul>
-      </p>
+      </div>
       <p className="mt-4">
         Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht
         vorgenommen.
@@ -312,7 +320,7 @@ const Datenschutz = (): JSX.Element => (
         </ExternalLink>
       </p>
     </section>
-  </Layout>
+  </>
 );
 
 export default Datenschutz;
